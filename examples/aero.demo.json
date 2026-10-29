@@ -1,0 +1,10 @@
+{
+  "apps": [
+    {
+      "name": "hello",
+      "command": "node",
+      "args": ["examples/hello.mjs"],
+      "cwd": ".."
+    }
+  ]
+}

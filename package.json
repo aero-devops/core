@@ -1,0 +1,27 @@
+{
+  "name": "aero-core",
+  "version": "0.1.0",
+  "description": "Local application control plane for Aero",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "aero": "./src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "demo": "node src/cli.js --config examples/aero.demo.json",
+    "test": "node --test",
+    "check": "npm test"
+  },
+  "dependencies": {
+    "aero-shell-runtime": "file:../shell"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aero-devops/core.git"
+  },
+  "license": "MIT"
+}

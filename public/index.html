@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#080808">
+    <meta name="description" content="Aero Core manages named applications on the machine where it runs.">
+    <title>Aero Core</title>
+    <link rel="icon" href="/favicon.png">
+    <link rel="stylesheet" href="/fonts.css">
+    <link rel="stylesheet" href="/style.css">
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body>
+    <div class="layout">
+      <header class="topbar">
+        <img src="/favicon.png" alt="Aero" width="32" height="32">
+        <div class="summary" aria-live="polite"><span id="app-count">0 services</span><span id="running-count">0 running</span><span id="server-time">Checking status</span></div>
+      </header>
+      <main>
+        <section class="intro" aria-labelledby="page-title">
+          <h1 id="page-title">Core</h1>
+          <p>The services on this machine. Each one is a jet: smoke streams from it while it runs, comes loose as it stops, and the air goes still when it has stopped.</p>
+        </section>
+        <section class="services" aria-label="Services">
+          <div class="section-head"><button id="refresh" type="button" class="action">Refresh</button></div>
+          <div id="message" role="status" aria-live="polite"></div>
+          <div id="app-list" class="app-list"></div>
+        </section>
+      </main>
+      <footer><span>127.0.0.1 only</span><span>Services stop when Core exits.</span></footer>
+    </div>
+  </body>
+</html>
